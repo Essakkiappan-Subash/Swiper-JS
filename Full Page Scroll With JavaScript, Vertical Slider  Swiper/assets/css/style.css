@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* === Swiper JS for Scroll-Bar === */
+html,
+body {
+position: relative;
+height: 100%;
+}
+
+body {
+background: #eee;
+font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+font-size: 14px;
+color: #000;
+margin: 0;
+padding: 0;
+}
+
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+
+/* Center slide text vertically */
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}  /* === Swiper JS for Scroll-Bar === */
+
+
+
+/* === air_pods === */
+.air_pods,
+.beats,
+.apple_watch,
+.galaxy_bads{
+    width: 100%;
+    height: 100vh;
+    padding: 0 80px;
+}
+
+.section_container{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.air_pods{
+    background: #1c1c1c;
+}
+
+.image{
+    width: 400px;
+}
+
+.image > img{
+    width: 100%;
+}
+
+.text{
+    width: 350px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.air_pods > .section_container > .text{
+    color: #fff;
+}
+
+.text > .title{
+    margin-bottom: 50px;
+    font-size: 82px;
+    font-weight: 100;
+}
+
+.text > .description{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+/* === beats === */
+.beats > .section_container > .image{
+    order: 2;
+    width: 500px;
+}
+
+.beats > .section_container > .text{
+    color: #000;
+}
+
+
+/* === apple_watch === */
+.apple_watch{
+    background: #92b7ff;
+}  
+
+
+/* === galaxy_bads === */
+.galaxy_bads{
+    background: #000;
+} 
+
+.galaxy_bads > .section_container > .text{
+    color: #fff;
+}
+
+.galaxy_bads > .section_container > .text > .title{
+    font-size: 45px;
+}
+
+.galaxy_bads > .section_container > .text > .title > span{
+    font-weight: 500;
+}
+
+
+.swiper-pagination-progressbar{
+    color: aqua;
+}
+
+.swiper-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar
+.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical, 
+.swiper-vertical>.swiper-pagination-progressbar{
+    position: absolute;
+    left: 90%;
+    top: 25%;
+    height: 25%;
+
+}
+
+/* === apple_watch === */
