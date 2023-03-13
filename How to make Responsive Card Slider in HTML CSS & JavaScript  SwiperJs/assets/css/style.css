@@ -1,0 +1,109 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+}
+
+.slider-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: gray;
+    padding: 40px 0;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    /* width: 320px; */
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.image-contant,
+.card-content{
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-contant{
+    position: relative;
+    row-gap: 5px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+
+.card-image{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image > .cord-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description{
+    color: #707070;
+    font-size: 14px;
+    text-align: center;
+}
+
+button.button{
+    margin: 14px;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #4070f4;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button.button:hover{
+    background: #265df2;
+}
+
+button.button > a{
+    color: #fff;
+    text-decoration: none;
+}

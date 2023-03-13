@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Slider in HTML CSS & JavaScript | SwiperJs</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="file:///E:/Subash/Web%20Programing/Libraries/swiperjs-Silders/swiperjs-cssfile/swiper-bundle.min.css">
+</head>
+<body>
+
+    <div class="slider-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-contant">
+                        <span class="overlay"></span>
+    
+                        <div class="card-image">
+                            <img src="./Zip/Responsive Card Slider/Responsive Card Slider/images/profile1.jpg" alt="" class="cord-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio error sit fuga perferendis, eligendi delectus a voluptas dolore minus.
+                        </p>
+                        <button class="button">
+                            <a href="#asd">View More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="file:///E:/Subash/Web%20Programing/Libraries/swiperjs-Silders/swiperjs-jsfile/swiper-bundle.min.js"></script>
+</body>
+</html>
