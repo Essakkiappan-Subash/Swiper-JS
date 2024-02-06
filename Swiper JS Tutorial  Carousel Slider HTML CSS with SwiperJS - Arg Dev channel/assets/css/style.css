@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.swiper{
+    width: calc(100% - 20%);
+    height: calc(100% - 10%);
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.swiper-slide > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pagination_{
+    /* position: absolute; */
+    width: calc(100% - 10%);
+}

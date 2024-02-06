@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper JS Tutorial | Carousel Slider HTML CSS with SwiperJS</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/swiperjs-Silders/swiperjs-cssfile/swiper-bundle.min.css">
+</head>
+<body>
+
+    <section>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-1.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-2.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-3.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-4.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-5.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-6.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-7.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-8.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-9.jpg" alt="" class="slideImg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/img/image-11.jpg" alt="" class="slideImg">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <div class="pagination_">
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    
+    <!-- Swiper JS -->
+    <script src="./assets/swiperjs-Silders/swiperjs-jsfile/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 10,
+            slidesPerView: 3,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                // type: 'progressbar',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
